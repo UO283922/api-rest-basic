@@ -1,0 +1,9 @@
+services:
+  api-rest-basic:
+    image: api-rest-basic
+    build: ./
+    container_name: api-rest-basic
+    environment:
+      - PORT=3000
+    ports:
+      - "3000:3000"
